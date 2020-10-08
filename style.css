@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&display=swap');
+
+:root {
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #666666;
+    --bg-secondary: #333333;
+    --transition-speed: 600ms;
+}
+
+.hero {
+    background-image: url("hero.jpg");
+    background-size: cover;
+    background-color: white;
+    margin-bottom: 0.5rem;
+    height: 32rem;
+    padding-top: 1rem;
+    border-radius: 15px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin: 1rem 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1ch;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+}
+
+.body-text {
+    font-size: 1.2rem;
+    background-color: #cccccc;
+    border-radius: 15px;
+}
+
+.body-text h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 1rem;
+    margin: 0;
+    color: #333333;
+}
+
+.body-text p {
+    padding: 1rem;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+footer {
+    margin-bottom: 5.5rem;
+    padding-right: 0;
+}

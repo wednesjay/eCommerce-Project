@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nunito&display=swap');
+
+:root {
+    --main-radius: 8px;
+    --main-padding: 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.75fr 0.25fr;
+    grid-template-areas: "best-sellers new-arrivals" "rec-items rec-items";
+    grid-gap: 0.5rem;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+}
+
+section>h2 {
+    padding-top: 1rem;
+}
+
+section>h3 {
+    padding-top: 1rem;
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.best-sellers {
+    background-color: #ecc68d;
+    grid-area: best-sellers;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.new-arrivals {
+    background-color: #7d9778;
+    grid-area: new-arrivals;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.rec-items {
+    background: #447354;
+    grid-area: rec-items;
+    border-radius: var(--main-radius);
+    padding-top: var(--main-padding);
+}
+
+.product-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 4px;
+    margin: 1rem;
+    display: inline-block;
+}
+
+.product-img:hover {
+    filter: drop-shadow(5px 5px 10px black)
+}
+
+.product-img-rec {
+    width: 300px;
+    height: 300px;
+    border-radius: 4px;
+    margin: 1rem 1.5rem;
+}
+
+.product-img-rec:hover {
+    filter: drop-shadow(5px 5px 10px black)
+}
+
+.product-desc {
+    width: 300px;
+    display: inline-block;
+    text-align: center;
+    margin: 1rem;
+    
+}
+
+footer {
+    color: black;
+    font-family: unset;
+    text-align: center;
+    display: block;
+}
+
+@media only screen and (max-width:800px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-areas: "best-sellers" "new-arrivals" "rec-items";
+    }
+
+    footer {
+        margin-bottom: 6.5rem;
+    }
+}
